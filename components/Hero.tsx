@@ -44,7 +44,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className='relative h-screen pt-[150px] px-60 w-full'>
+    <div className='relative h-screen pt-[150px] px-5 lg:px-60 w-full'>
       <div ref={wrapperRef} className="relative overflow-hidden rounded-3xl border dark-border p-3 w-full h-full box-border">
         <HorizontalBorder/>
         <div className="rounded-2xl overflow-hidden border dark-border h-full">
@@ -55,15 +55,15 @@ const Hero = () => {
               <div className="bg-green-800 w-5 h-5 rounded-full shadow-lg shadow-green-800"></div>
             </div>
           </div>
-          <div className="px-10 py-8">
+          <div className="px-5 lg:px-10 py-8">
             <div className="">
-              <h1 ref={headingRef1} className='text-[6vw] font-semibold tracking-wider text-shadow-white leading-none text-white'>
-                I bring <span className='gloock text-[6vw] font-normal'>digital visions</span> to
+              <h1 ref={headingRef1} className='text-[13vw] lg:text-[6vw] font-semibold tracking-wider text-shadow-white leading-none text-white'>
+                I bring <span className=' text-[13vw] lg:text-[6vw] font-semibold'>digital visions</span> to
               </h1>
-              <h1 ref={headingRef2} className='text-[6vw] font-semibold tracking-wider text-shadow-white leading-none text-white'>
+              <h1 ref={headingRef2} className='text-[13vw] lg:text-[6vw] font-semibold tracking-wider text-shadow-white leading-none text-white'>
                 life through design &
               </h1>
-              <h1 ref={headingRef3} className='text-[6vw] font-semibold tracking-wider text-shadow-white leading-none text-white'>
+              <h1 ref={headingRef3} className='text-[13vw] lg:text-[6vw] font-semibold tracking-wider text-shadow-white leading-none text-white'>
                 <>code.</>
               </h1>
             </div>

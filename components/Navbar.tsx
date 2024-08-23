@@ -54,7 +54,7 @@ const Navbar = () => {
                         height={25}
                         alt="Picture of the author"
                     />
-                    <div className="flex flex-col">
+                    <div className="md:flex flex-col hidden">
                         <h4 className='color text-xl tracking-wider font-normal'>Pratik Trivedi</h4>
                         <p className='tracking-wide text-[#f2f2f27e] text-lg'>Web Designer</p>
                     </div>
@@ -74,7 +74,7 @@ const Navbar = () => {
                         Info
                     </Link> */}
                 </div>
-                <div ref={contactRef} className="flex items-center">
+                <div ref={contactRef} className="md:flex hidden items-center">
                     <a  ref={link1Ref}
                         href="https://www.linkedin.com/in/pratik-trivedi-dev/" target='_blank'
                         className='hover:bg-[#f2f2f20d] px-5 py-2 rounded-full text-lg flex items-center gap-2 transition-all'

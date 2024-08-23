@@ -66,7 +66,7 @@ const Featured = () => {
 
 
     return (
-        <div className='relative min-h-screen pt-[150px] px-60 w-full mb-40' id='featured'>
+        <div className='relative h-fulln pt-[90px] lg:pt-[150px] px-5 lg:px-60 w-full mb-40' id='featured'>
             <div ref={cardRef1} className="relative overflow-hidden rounded-3xl border dark-border p-3 w-full h-full box-border featured-shadow">
                 <HorizontalBorder />
                 <a href='https://pkwmediaagency.com/'>

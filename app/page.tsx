@@ -20,7 +20,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen w-[100vw] background color hero">
+    <main className="min-h-screen w-screen overflow-hidden background color hero">
       <Navbar />
       <Hero />
       <Featured />

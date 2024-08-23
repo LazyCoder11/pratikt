@@ -7,8 +7,6 @@
   display: none;
 }
 
-
-
 :root {
   --background: #101010;
   --on-background: #f2f2f2;
@@ -20,7 +18,6 @@
 }
 
 .hero{
-  /* background: url(/public/images/Image.png) no-repeat cover; */
   background-image: radial-gradient(circle closest-corner at 50% 0, rgba(242, 242, 242, .15), rgba(0, 0, 0, 0));
 }
 
