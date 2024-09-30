@@ -88,7 +88,7 @@ const Featured = () => {
         <div className='relative h-full pt-[90px] lg:pt-[150px] px-5 lg:px-60 w-full mb-20' id='featured'>
             <div ref={cardRef1} className="relative overflow-hidden rounded-3xl border dark-border p-3 w-full h-full box-border featured-shadow">
                 <HorizontalBorder />
-                <a href='https://pkwmediaagency.com/'>
+                <a href='https://4shan.in/'>
                     <div className="rounded-2xl p-10 flex flex-col relative featured-bg transition-all duration-1000 hover:bg-gradient-to-b hover:from-[#ffda8975] overflow-hidden border dark-border h-full">
                         <ProjectTitle title='4Shan Digital' desc='Management Firm' />
                         <ProjectThumbnail url='/images/4shan.svg' alt='4Shan Digital' />
