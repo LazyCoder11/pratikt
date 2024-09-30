@@ -88,7 +88,7 @@ const Featured = () => {
         <div className='relative h-full pt-[90px] lg:pt-[150px] px-5 lg:px-60 w-full mb-20' id='featured'>
             <div ref={cardRef1} className="relative overflow-hidden rounded-3xl border dark-border p-3 w-full h-full box-border featured-shadow">
                 <HorizontalBorder />
-                <a href='https://4shan.in/'>
+                <a href='https://4shan.in/' target='_blank'>
                     <div className="rounded-2xl p-10 flex flex-col relative featured-bg transition-all duration-1000 hover:bg-gradient-to-b hover:from-[#ffda8975] overflow-hidden border dark-border h-full">
                         <ProjectTitle title='4Shan Digital' desc='Management Firm' />
                         <ProjectThumbnail url='/images/4shan.svg' alt='4Shan Digital' />
@@ -97,7 +97,7 @@ const Featured = () => {
             </div>
             <div ref={cardRef2} className="relative overflow-hidden rounded-3xl border dark-border p-3 w-full h-full box-border mt-20 featured-shadow">
                 <HorizontalBorder />
-                <a href='https://pkwmediaagency.com/'>
+                <a href='https://pkwmediaagency.com/' target='_blank'>
                     <div className="rounded-2xl p-10 flex flex-col relative featured-bg transition-all duration-1000 hover:bg-gradient-to-b hover:from-blue-800 overflow-hidden border dark-border h-full">
                         <ProjectTitle title='PKW Media Agency' desc='Video Editor Portfolio' />
                         <ProjectThumbnail url='/images/pkwmedia.svg' alt='PKW Media Agency' />
@@ -106,7 +106,7 @@ const Featured = () => {
             </div>
             <div ref={cardRef3} className="relative overflow-hidden rounded-3xl border dark-border p-3 w-full h-full box-border featured-shadow mt-20">
                 <HorizontalBorder />
-                <a href='https://dot-chi.vercel.app/'>
+                <a href='https://dot-chi.vercel.app/' target='_blank'>
                     <div className="rounded-2xl p-10 flex flex-col relative featured-bg overflow-hidden border dark-border h-full transition-all duration-1000 hover:bg-gradient-to-b hover:from-gray-700">
                         <ProjectTitle title='Dot' desc='Messanger Web App' subDesc='-- built with NextJS, Tailwind, Redis, Upstash' />
                         <ProjectThumbnail url='/images/dot.svg' alt='Dot' />
@@ -115,7 +115,7 @@ const Featured = () => {
             </div>
             <div ref={cardRef4} className="relative overflow-hidden rounded-3xl border dark-border p-3 w-full h-full box-border featured-shadow mt-20">
                 <HorizontalBorder />
-                <a href='https://buzzlrr.com/'>
+                <a href='https://buzzlrr.com/' target='_blank'>
                     <div className="rounded-2xl p-10 flex flex-col relative featured-bg overflow-hidden border dark-border h-full transition-all duration-1000 hover:bg-gradient-to-b hover:from-gray-700">
                         <ProjectTitle title='Buzzlrr' desc='Digital Content Creator'/>
                         <ProjectThumbnail url='/images/buzzlrr.svg' alt='Buzzlrr' />
