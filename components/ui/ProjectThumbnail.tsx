@@ -38,7 +38,7 @@ const ProjectThumbnail: FC<ThumbnailDetails> = ({
     }, []);
 
     return (
-        <div className='flex justify-center mt-10 thumbnail'>
+        <div className='flex h-full w-full justify-center mt-10 thumbnail'>
             <img
                 ref={imageRef}
                 className='w-full lg:w-[90%] border dark-border rounded-2xl h-full lg:h-1/2 -mb-20 mt-8 thumbnail-shadow'

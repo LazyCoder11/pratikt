@@ -76,7 +76,7 @@ const Hero = () => {
       </div>
       <div className="h-[200px] absolute bottom-0 left-0 w-[100%] hero-fade flex justify-center items-center">
         <div ref={arrowRef}>
-          <FiArrowDown className='text-white box-shadow-white mt-14' size={40} />
+          {/* <FiArrowDown className='text-white box-shadow-white mt-14' size={40} /> */}
         </div>
       </div>
     </div>

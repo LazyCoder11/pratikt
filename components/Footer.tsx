@@ -36,9 +36,6 @@ const Footer = () => {
                                     <Link href="/" className='text-2xl lg:text-lg'>
                                         Work
                                     </Link>
-                                    {/* <Link href="/" className='text-lg'>
-                                        Info
-                                    </Link> */}
                                 </div>
                             </div>
                             <div className="w-full lg:w-1/2">
@@ -55,9 +52,6 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="pb-10 float-right">
-
                     </div>
                 </div>
             </div>
