@@ -13,6 +13,10 @@
   --secondary-font: "Gloock", serif;
 }
 
+body{
+  background-color: var(--background);
+}
+
 .background{
   background-color: var(--background);
 }

@@ -55,15 +55,15 @@ const Navbar = () => {
                         alt="Picture of the author"
                     />
                     <div className="md:flex flex-col hidden">
-                        <h4 className='color text-xl tracking-wider font-normal'>Pratik Trivedi</h4>
-                        <p className='tracking-wide text-[#f2f2f27e] text-lg'>Web Designer</p>
+                        <h4 className='color text-lg tracking-wider font-normal'>Pratik Trivedi</h4>
+                        <p className='tracking-wide text-[#f2f2f27e] text-base'>Web Designer</p>
                     </div>
                 </div>
                 <div ref={linksRef} className="relative flex h-10 items-center py-6 px-2 justify-between gap-3 rounded-full backdrop-blur-3xl nav-pill-shadow border border-[#f2f2f20d] bg-[#f2f2f20d]">
                     <div className="absolute -top-0 left-[30px] w-10 h-1 rounded-full bg-[#f2f2f2] nav-indicator-glow"></div>
                     <Link
-                        href='/app/page.tsx'
-                        className='active px-6 py-2 active:bg-[#404040] hover:bg-gradient-to-r from-transparent to-[#f2f2f20d] rounded-full'
+                        href='/'
+                        className='active px-6 py-1 active:bg-[#404040] hover:bg-gradient-to-r from-transparent to-[#f2f2f20d] rounded-full'
                     >
                         Work
                     </Link>
@@ -75,17 +75,17 @@ const Navbar = () => {
                     </Link> */}
                 </div>
                 <div ref={contactRef} className="md:flex hidden items-center">
-                    <a  ref={link1Ref}
+                    <a ref={link1Ref}
                         href="https://www.linkedin.com/in/pratik-trivedi-dev/" target='_blank'
                         className='hover:bg-[#f2f2f20d] px-5 py-2 rounded-full text-lg flex items-center gap-2 transition-all'
                     >
                         LinkedIn <CgArrowTopRight size={20} />
                     </a>
-                    <a  ref={link2Ref}
-                        href="https://drive.google.com/file/d/1tsjV6qcovWAgMnUO4EAIJamhooSozBF-/view?usp=sharing" target='_blank'
+                    <a ref={link2Ref}
+                        href="https://github.com/LazyCoder11" target='_blank'
                         className='hover:bg-[#f2f2f20d] px-5 py-2 rounded-full text-lg flex items-center gap-2 transition-all'
                     >
-                        Resume <CgArrowTopRight size={20} />
+                        Github <CgArrowTopRight size={20} />
                     </a>
                 </div>
             </div>

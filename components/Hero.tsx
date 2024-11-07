@@ -57,13 +57,13 @@ const Hero = () => {
           </div>
           <div className="px-5 lg:px-10 py-8">
             <div className="">
-              <h1 ref={headingRef1} className='text-[13vw] lg:text-[6vw] font-semibold tracking-wider text-shadow-white leading-none text-white'>
-                I bring <span className=' text-[13vw] lg:text-[6vw] font-semibold'>digital visions</span> to
+              <h1 ref={headingRef1} className='text-[13vw] lg:text-[4.5vw] font-semibold tracking-wider text-shadow-white leading-none text-white'>
+                I bring <span className=' text-[13vw] lg:text-[4.5vw] font-semibold'>digital visions</span> to
               </h1>
-              <h1 ref={headingRef2} className='text-[13vw] lg:text-[6vw] font-semibold tracking-wider text-shadow-white leading-none text-white'>
+              <h1 ref={headingRef2} className='text-[13vw] lg:text-[4.5vw] font-semibold tracking-wider text-shadow-white leading-none text-white'>
                 life through design &
               </h1>
-              <h1 ref={headingRef3} className='text-[13vw] lg:text-[6vw] font-semibold tracking-wider text-shadow-white leading-none text-white'>
+              <h1 ref={headingRef3} className='text-[13vw] lg:text-[4.5vw] font-semibold tracking-wider text-shadow-white leading-none text-white'>
                 <>code.</>
               </h1>
             </div>

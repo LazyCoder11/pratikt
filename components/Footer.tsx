@@ -46,9 +46,12 @@ const Footer = () => {
                                     <a href="https://www.linkedin.com/in/pratik-trivedi-dev/" target='_blank' className='text-2xl lg:text-lg flex items-center gap-3'>
                                         LinkedIn <RxArrowTopRight />
                                     </a>
-                                    <a href="https://drive.google.com/file/d/1tsjV6qcovWAgMnUO4EAIJamhooSozBF-/view?usp=sharing" target='_blank' className='text-2xl lg:text-lg flex items-center gap-3'>
-                                        Resume <RxArrowTopRight />
+                                    <a href="https://github.com/LazyCoder11" target='_blank' className='text-2xl lg:text-lg flex items-center gap-3'>
+                                        Github <RxArrowTopRight />
                                     </a>
+                                    {/* <a href="https://drive.google.com/file/d/1tsjV6qcovWAgMnUO4EAIJamhooSozBF-/view?usp=sharing" target='_blank' className='text-2xl lg:text-lg flex items-center gap-3'>
+                                        Resume <RxArrowTopRight />
+                                    </a> */}
                                 </div>
                             </div>
                         </div>

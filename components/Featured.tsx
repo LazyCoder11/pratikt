@@ -12,12 +12,14 @@ const Featured = () => {
     const cardRef2 = useRef<HTMLDivElement>(null)
     const cardRef3 = useRef<HTMLDivElement>(null)
     const cardRef4 = useRef<HTMLDivElement>(null)
+    const cardRef5 = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
         const card1 = cardRef1.current;
         const card2 = cardRef2.current;
         const card3 = cardRef3.current;
-        const card4 = cardRef3.current;
+        const card4 = cardRef4.current;
+        const card5 = cardRef5.current;
 
         if (card1) {
             gsap.set(card1.querySelector('img'), { scale: 1 });
@@ -58,6 +60,15 @@ const Featured = () => {
                 gsap.to(card4.querySelector('img'), { scale: 1, duration: 0.5 });
             });
         }
+        if (card5) {
+            gsap.set(card5.querySelector('img'), { scale: 1 });
+            card5.addEventListener('mouseenter', () => {
+                gsap.to(card5.querySelector('img'), { scale: 1.05, duration: 0.5 });
+            });
+            card5.addEventListener('mouseleave', () => {
+                gsap.to(card5.querySelector('img'), { scale: 1, duration: 0.5 });
+            });
+        }
 
 
         // Cleanup event listeners on unmount
@@ -78,15 +89,25 @@ const Featured = () => {
                 card4.removeEventListener('mouseenter', () => { });
                 card4.removeEventListener('mouseleave', () => { });
             }
+            if (card5) {
+                card5.removeEventListener('mouseenter', () => { });
+                card5.removeEventListener('mouseleave', () => { });
+            }
         }
     }, []);
-
-
-
 
     return (
         <div className='relative h-full pt-[90px] lg:pt-[150px] px-5 lg:px-60 w-full mb-20' id='featured'>
             <div ref={cardRef1} className="relative overflow-hidden rounded-3xl border dark-border p-3 w-full h-full box-border featured-shadow">
+                <HorizontalBorder />
+                <a href='https://growyourcorp.com/' target='_blank'>
+                    <div className="rounded-2xl p-10 flex flex-col relative featured-bg transition-all duration-1000 hover:bg-gradient-to-b hover:from-[#7814f7] overflow-hidden border dark-border h-full">
+                        <ProjectTitle title='Grow Your Corp' desc='Digital Marketing Agency' subDesc='-- built with NextJS, Tailwind, Typescript, Framer Motion' />
+                        <ProjectThumbnail url='/images/growyourcorp.png' alt='Grow Your Corp' />
+                    </div>
+                </a>
+            </div>
+            <div ref={cardRef2} className="relative overflow-hidden rounded-3xl border dark-border p-3 w-full h-full mt-20 box-border featured-shadow">
                 <HorizontalBorder />
                 <a href='https://4shan.in/' target='_blank'>
                     <div className="rounded-2xl p-10 flex flex-col relative featured-bg transition-all duration-1000 hover:bg-gradient-to-b hover:from-[#ffda8975] overflow-hidden border dark-border h-full">
@@ -95,7 +116,7 @@ const Featured = () => {
                     </div>
                 </a>
             </div>
-            <div ref={cardRef2} className="relative overflow-hidden rounded-3xl border dark-border p-3 w-full h-full box-border mt-20 featured-shadow">
+            <div ref={cardRef3} className="relative overflow-hidden rounded-3xl border dark-border p-3 w-full h-full box-border mt-20 featured-shadow">
                 <HorizontalBorder />
                 <a href='https://pkwmediaagency.com/' target='_blank'>
                     <div className="rounded-2xl p-10 flex flex-col relative featured-bg transition-all duration-1000 hover:bg-gradient-to-b hover:from-blue-800 overflow-hidden border dark-border h-full">
@@ -104,7 +125,7 @@ const Featured = () => {
                     </div>
                 </a>
             </div>
-            <div ref={cardRef3} className="relative overflow-hidden rounded-3xl border dark-border p-3 w-full h-full box-border featured-shadow mt-20">
+            <div ref={cardRef4} className="relative overflow-hidden rounded-3xl border dark-border p-3 w-full h-full box-border featured-shadow mt-20">
                 <HorizontalBorder />
                 <a href='https://dot-chi.vercel.app/' target='_blank'>
                     <div className="rounded-2xl p-10 flex flex-col relative featured-bg overflow-hidden border dark-border h-full transition-all duration-1000 hover:bg-gradient-to-b hover:from-gray-700">
@@ -113,7 +134,7 @@ const Featured = () => {
                     </div>
                 </a>
             </div>
-            <div ref={cardRef4} className="relative overflow-hidden rounded-3xl border dark-border p-3 w-full h-full box-border featured-shadow mt-20">
+            <div ref={cardRef5} className="relative overflow-hidden rounded-3xl border dark-border p-3 w-full h-full box-border featured-shadow mt-20">
                 <HorizontalBorder />
                 <a href='https://buzzlrr.com/' target='_blank'>
                     <div className="rounded-2xl p-10 flex flex-col relative featured-bg overflow-hidden border dark-border h-full transition-all duration-1000 hover:bg-gradient-to-b hover:from-gray-700">
@@ -125,7 +146,7 @@ const Featured = () => {
             <div className="flex flex-col justify-center items-center mt-20">
                 I charge
                 <h2 className='text-3xl'>
-                    35$ - 50$ / hour
+                    10$ - 15$ / hour
                 </h2>
             </div>
         </div>
