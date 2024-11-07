@@ -143,12 +143,12 @@ const Featured = () => {
                     </div>
                 </a>
             </div>
-            <div className="flex flex-col justify-center items-center mt-20">
+            {/* <div className="flex flex-col justify-center items-center mt-20">
                 I charge
                 <h2 className='text-3xl'>
                     10$ - 15$ / hour
                 </h2>
-            </div>
+            </div> */}
         </div>
     )
 }
