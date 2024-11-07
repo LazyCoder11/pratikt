@@ -21,7 +21,7 @@ export default function Home() {
     requestAnimationFrame(raf);
 
     // Set loading to false after a delay
-    const timeout = setTimeout(() => setIsLoading(false), 3500);
+    const timeout = setTimeout(() => setIsLoading(false), 5000);
 
     return () => clearTimeout(timeout);
   }, []);

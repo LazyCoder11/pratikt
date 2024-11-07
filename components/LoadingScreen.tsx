@@ -8,7 +8,7 @@ export default function LoadingScreen() {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: ['<i>Loading</i>', ':)'],
-      typeSpeed: 50,
+      typeSpeed: 100,
     });
 
     return () => {
@@ -22,8 +22,8 @@ export default function LoadingScreen() {
       initial={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
       animate={{ opacity: 0, scale: 1, filter: "blur(5px)" }}
       transition={{
-        duration: 4,        // Slightly increased duration for smoother ending
-        delay: 2,           // Delay before starting the fade-out
+        duration: 5,        // Slightly increased duration for smoother ending
+        delay: 4,           // Delay before starting the fade-out
         ease: "backOut",    // Easing function for smoothness
       }}
       className="fixed top-0 left-0 w-screen h-screen text-white text-3xl background flex items-center justify-center z-50 pointer-events-none"
