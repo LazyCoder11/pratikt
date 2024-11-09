@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Neue } from "@/utils/customFonts";
-// import { Inter } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,6 +14,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          id="vtag-ai-js"
+          async
+          src="https://r2.leadsy.ai/tag.js?pid=UT8quN98W4X9oAdL&version=062024"
+        ></script>
+      </head>
       <body className={`${Neue.variable} font-neueMontreal`}>
         {children}
       </body>
