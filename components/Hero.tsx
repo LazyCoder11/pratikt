@@ -32,6 +32,7 @@ const Hero = () => {
     gsap.to(macHeader, {
       opacity: 1,
       duration: 0.5,
+      delay: 5,
     });
 
     gsap.to([wrapper, macHeader, heading1, heading2, heading3, dets, arrowDown], {
@@ -39,7 +40,8 @@ const Hero = () => {
       opacity: 1,
       duration: 1,
       stagger: 0.5,
-      ease: "power4.in"
+      ease: "power4.in",
+      delay: 5,
     });
   }, []);
 
@@ -76,7 +78,7 @@ const Hero = () => {
       </div>
       <div className="h-[200px] absolute bottom-0 left-0 w-[100%] hero-fade flex justify-center items-center">
         <div ref={arrowRef}>
-          {/* <FiArrowDown className='text-white box-shadow-white mt-14' size={40} /> */}
+          <FiArrowDown className='text-white box-shadow-white mt-14' size={40} />
         </div>
       </div>
     </div>

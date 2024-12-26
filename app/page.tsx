@@ -28,11 +28,12 @@ export default function Home() {
 
   return (
     <>
-      {isLoading && <LoadingScreen />}
+      {/* {isLoading && <LoadingScreen />} */}
+      <LoadingScreen/>
 
       <main
         className={`min-h-screen w-screen overflow-hidden background color hero transition-all duration-500 ${
-          isLoading ? "blur-lg" : "blur-none"
+          isLoading ? "blur-sm" : "blur-none"
         }`}
       >
         <Navbar />

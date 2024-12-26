@@ -27,12 +27,14 @@ const Navbar = () => {
 
         gsap.set([logo, links, contact], {
             y: -50,
-            opacity: 0
+            opacity: 0,
+            // delay: 5,
         });
 
         gsap.to(navbar, {
             opacity: 1,
             duration: 0.5,
+            delay: 5,
         });
 
         gsap.to([logo, links, contact], {
@@ -40,7 +42,8 @@ const Navbar = () => {
             opacity: 1,
             duration: 1,
             stagger: 0.1,
-            ease: "power2.in"
+            ease: "power2.in",
+            delay: 5,
         });
     }, []);
 
@@ -48,12 +51,12 @@ const Navbar = () => {
         <div ref={navbarRef} className='navbar fixed flex items-center top-0 left-0 w-full z-10 h-[130px] bg-gradient-to-b from-[#000000b3] to-[#10101000]'>
             <div className="flex justify-between items-center px-10 my-4 w-full">
                 <div ref={logoRef} className="flex gap-5 items-center">
-                    <Image
+                    {/* <Image
                         src="/images/logo.png"
                         width={30}
                         height={25}
                         alt="Picture of the author"
-                    />
+                    /> */}
                     <div className="md:flex flex-col hidden">
                         <h4 className='color text-lg tracking-wider font-normal'>Pratik Trivedi</h4>
                         <p className='tracking-wide text-[#f2f2f27e] text-base'>Web Designer</p>
