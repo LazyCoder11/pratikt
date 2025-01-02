@@ -46,8 +46,8 @@ const ProjectTitle: FC<ProjectDetails> = ({
     return (
         <div className="flex justify-between">
             <div className=''>
-                <h3 ref={titleRef} className='text-2xl md:text-3xl font-medium tracking-wider project-shadow'>{title}</h3>
-                <p ref={descRef} className='text-[#f2f2f2cc] font-medium text-lg md:text-xl mt-3 lg:mt-0'>{desc} <span className='text-gray-500'>{subDesc}</span></p>
+                <h3 ref={titleRef} className='text-2xl md:text-3xl font-medium tracking-wide project-shadow'>{title}</h3>
+                <p ref={descRef} className='text-[#f2f2f2cc] font-medium text-lg md:text-xl mt-0 lg:mt-0'>{desc} <span className='text-gray-500'>{subDesc}</span></p>
             </div>
             <div className="">
                 <FiArrowRight size={35} />

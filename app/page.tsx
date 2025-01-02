@@ -29,14 +29,13 @@ export default function Home() {
   return (
     <>
       {/* {isLoading && <LoadingScreen />} */}
-      <LoadingScreen/>
+      {/* <LoadingScreen/> */}
+      {/* // ${ isLoading ? "blur-sm" : "blur-none"}` */}
 
       <main
-        className={`min-h-screen w-screen overflow-hidden background color hero transition-all duration-500 ${
-          isLoading ? "blur-sm" : "blur-none"
-        }`}
+        className={`min-h-screen w-screen overflow-hidden background color hero transition-all duration-500`}
       >
-        <Navbar />
+
         <Hero />
         <Featured />
         <Footer />

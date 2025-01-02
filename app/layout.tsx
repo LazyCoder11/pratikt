@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Neue } from "@/utils/customFonts";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Pratik Trivedi — Web Designer",
@@ -22,6 +23,7 @@ export default function RootLayout({
         ></script>
       </head>
       <body className={`${Neue.variable} font-neueMontreal`}>
+        <Navbar />
         {children}
       </body>
     </html>
