@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
                     <div className='pb-10'>
                         <h3 className='text-sm md:text-xl tracking-wide'>© 2024 Pratik Trivedi. All Rights Reserved.</h3>
-                        <p className='opacity-50 text-base md:text-lg tracking-wide'>Made with love and Tea.</p>
+                        <p className='opacity-50 text-base md:text-lg tracking-wide'>Made with love and maggie ( schezwan double masala ).</p>
                     </div>
                 </div>
                 <div className="w-full lg:w-1/2 h-full ">

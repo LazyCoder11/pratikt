@@ -16,10 +16,6 @@ const Hero = () => {
 
   useEffect(() => {
     const macHeader = macHeaderRef.current;
-    // const heading1 = headingRef1.current;
-    const heading2 = headingRef2.current;
-    const heading3 = headingRef3.current;
-    const wrapper = wrapperRef.current;
     const dets = detsRef.current;
     const arrowDown = arrowRef.current;
     const words =
@@ -65,7 +61,7 @@ const Hero = () => {
     return text.split(" ").map((word: string, index) => (
       <span
         key={index}
-        className="inline-block mr-3 md:mr-5"
+        className="inline-block mr-3 md:mr-5 select-none"
         style={{ display: "inline-block" }}
       >
         {word}

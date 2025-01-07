@@ -109,7 +109,7 @@ const Navbar = () => {
             href="/"
             onClick={() => setActiveTab("work")}
             className={`px-6 py-1 rounded-full ${
-              activeTab === "work" ? "text-white" : "text-gray-400"
+              activeTab === "work" ? "text-white" : "text-white/70"
             }`}
           >
             Work
@@ -118,7 +118,7 @@ const Navbar = () => {
             href="/info"
             onClick={() => setActiveTab("info")}
             className={`px-6 py-1 rounded-full ${
-              activeTab === "info" ? "text-white" : "text-gray-400"
+              activeTab === "info" ? "text-white" : "text-white/70"
             }`}
           >
             Info

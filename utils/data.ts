@@ -1,0 +1,46 @@
+export const projects = [
+  {
+    title: "Grow Your Corp",
+    desc: "Digital Marketing Agency",
+    subDesc: "-- built with NextJS, Tailwind, Typescript, Framer Motion",
+    url: "https://growyourcorp.com/",
+    imageUrl: "/images/growyourcorp.png",
+    bgClass: "hover:bg-gradient-to-b hover:from-[#7814f7] hover:to-transparent",
+  },
+  {
+    title: "4Shan Digital",
+    desc: "Management Firm",
+    url: "https://4shan.in/",
+    imageUrl: "/images/4shan.svg",
+    bgClass: "hover:bg-gradient-to-b hover:from-[#ffda8975] hover:to-transparent",
+  },
+  {
+    title: "ReproveSPL — Web3",
+    desc: "Autonomous AI Agent for Solana",
+    url: "https://reprove.io/",
+    imageUrl: "/images/reprovespl.png",
+    bgClass: "hover:bg-gradient-to-b hover:from-[#2f8ca3] hover:to-transparent",
+  },
+  {
+    title: "PKW Media Agency",
+    desc: "Video Editor Portfolio",
+    url: "https://pkwmediaagency.netlify.app//",
+    imageUrl: "/images/pkwmedia.svg",
+    bgClass: "hover:bg-gradient-to-b hover:from-blue-800 hover:to-transparent",
+  },
+  {
+    title: "Dot",
+    desc: "Messenger Web App",
+    subDesc: "-- built with NextJS, Tailwind, Redis, Upstash",
+    url: "https://dot-chi.vercel.app/",
+    imageUrl: "/images/dot.svg",
+    bgClass: "hover:bg-gradient-to-b hover:from-gray-700 hover:to-transparent",
+  },
+  {
+    title: "Buzzlrr",
+    desc: "Digital Content Creator",
+    url: "https://buzzlrr.com/",
+    imageUrl: "/images/buzzlrr.svg",
+    bgClass: "hover:bg-gradient-to-b hover:from-gray-700 hover:to-transparent",
+  },
+];

@@ -3,7 +3,7 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 
@@ -13,58 +13,62 @@
   --secondary-font: "Gloock", serif;
 }
 
-body{
+body {
   background-color: var(--background);
 }
 
-.background{
+.subtitle-text {
+  @apply text-3xl tracking-wide text-[#f2f2f2e6]
+}
+
+.background {
   background-color: var(--background);
 }
 
-.hero{
+.hero {
   background-image: radial-gradient(circle closest-corner at 50% 0, rgba(242, 242, 242, .15), rgba(0, 0, 0, 0));
 }
 
-.color{
+.color {
   color: var(--on-background);
 }
 
-.nav-indicator-glow{
+.nav-indicator-glow {
   box-shadow: 0 2px 25px 2px #fff;
 }
 
-.nav-pill-shadow{
+.nav-pill-shadow {
   box-shadow: 0 10px 25px -10px #00000026;
 }
 
-.text-shadow-white{
+.text-shadow-white {
   text-shadow: 0 1px 5px rgba(0, 87, 255, 0.6), 0 -5px 15px rgba(255, 90, 0, .2), 0 0 10px rgba(255, 255, 255, .1);
 }
 
-.box-shadow-white{
+.box-shadow-white {
   filter: drop-shadow(0 5px 20px rgba(0, 87, 255, .2), 0 -5px 15px rgba(255, 90, 0, .15), 0 0 30px rgba(255, 255, 255, .3));
 }
 
-.white-blur{
+.white-blur {
   filter: drop-shadow(0 0 5px #ffffff);
 }
 
-.mac-header{
+.mac-header {
   background: linear-gradient(to right, rgba(242, 242, 242, 0.1) 0%, rgba(242, 242, 242, 0.5) 50%, rgba(242, 242, 242, 0.1) 100%);
   /* filter: blur(40px); */
   /* -webkit-filter: blur(40px); */
   box-shadow: 0 10px 20px 4px rgba(0, 0, 0, 0.2);
 }
 
-.concrete-border{
-  box-shadow:  inset 0 0 10 0 rgba(0, 0, 0, 0.3);
+.concrete-border {
+  box-shadow: inset 0 0 10 0 rgba(0, 0, 0, 0.3);
 }
 
-.dark-border{
+.dark-border {
   border-color: #2e2e2e;
 }
 
-.gloock{
+.gloock {
   font-family: var(--secondary-font);
   text-shadow: 0 5px 15px rgba(0, 87, 255, .1), 0 -5px 15px rgba(255, 90, 0, .08), 0 0 30px rgba(255, 255, 255, .2);
   background-image: linear-gradient(to bottom, var(--on-background) 50%, transparent 90%);
@@ -77,33 +81,33 @@ body{
   padding-bottom: 20px;
 }
 
-.hero-fade{
+.hero-fade {
   /* z-index: 5; */
   background-image: linear-gradient(to bottom, rgba(16, 16, 16, 0), var(--background) 60%);
 }
 
-.box-border{
+.box-border {
   border-color: rgba(242, 242, 242, 0.15);
 }
 
-.horizontal-border{
-  background: linear-gradient(90deg, rgba(0,0,0,1) 5%, rgba(255,255,255,0.8) 35%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.8) 65%, rgba(0,0,0,1) 100%);
+.horizontal-border {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 5%, rgba(255, 255, 255, 0.8) 35%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.8) 65%, rgba(0, 0, 0, 1) 100%);
 }
 
-.featured-bg{
+.featured-bg {
   background: linear-gradient(rgba(37, 37, 37, 1) 0%, rgba(16, 16, 16, 1) 100%);
   transition: all 4s linear;
 }
 
-.featured-shadow{
+.featured-shadow {
   box-shadow: 0 40px 60px -50px rgba(0, 0, 0, 0.5);
 }
 
-.project-shadow{
+.project-shadow {
   color: #f2f2f2;
   text-shadow: 0 -2px 10px rgba(255, 255, 255, 0.4);
 }
 
-.thumbnail-shadow{
-    box-shadow: 0 40px 50px 10px rgba(0, 0, 0, .25);
+.thumbnail-shadow {
+  box-shadow: 0 40px 50px 10px rgba(0, 0, 0, .25);
 }
