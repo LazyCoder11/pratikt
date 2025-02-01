@@ -35,7 +35,6 @@ export default function Home() {
       <main
         className={`min-h-screen w-screen overflow-hidden background color hero transition-all duration-500`}
       >
-
         <Hero />
         <Featured />
         <Footer />

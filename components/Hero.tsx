@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { FiArrowDown } from "react-icons/fi";
 import gsap from "gsap";
 import HorizontalBorder from "./ui/HorizontalBorder";
+import { BiChevronDown } from "react-icons/bi";
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Hero = () => {
@@ -124,7 +125,7 @@ const Hero = () => {
       </div>
       <div className="h-[200px] absolute bottom-0 left-0 w-[100%] hero-fade flex justify-center items-center">
         <div ref={arrowRef} className="hidden md:block">
-          <FiArrowDown
+          <BiChevronDown
             className="text-white box-shadow-white mt-14"
             size={40}
           />

@@ -17,8 +17,12 @@ body {
   background-color: var(--background);
 }
 
+.heading-text{
+  @apply  text-[#f2f2f2e6] text-3xl tracking-wide
+}
+
 .subtitle-text {
-  @apply text-3xl tracking-wide text-[#f2f2f2e6]
+  @apply text-2xl tracking-wide text-[#f2f2f299]
 }
 
 .background {

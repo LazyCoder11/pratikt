@@ -133,11 +133,11 @@ const Navbar = () => {
             LinkedIn <CgArrowTopRight size={20} />
           </a>
           <a
-            href="https://github.com/LazyCoder11"
+            href="https://www.instagram.com/pratiktriveedi/"
             target="_blank"
             className="hover:bg-[#f2f2f20d] px-5 py-2 rounded-full text-lg flex items-center gap-2 transition-all"
           >
-            Github <CgArrowTopRight size={20} />
+            Instagram <CgArrowTopRight size={20} />
           </a>
         </div>
       </div>
