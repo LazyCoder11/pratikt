@@ -41,7 +41,7 @@ const ProjectThumbnail: FC<ThumbnailDetails> = ({ url, alt }) => {
         width={2000}
         height={2000}
         ref={imageRef}
-        className="w-full lg:w-[90%] border dark-border scale-110 md:scale-100 rounded-2xl h-full lg:h-1/2 md:-mb-20 mt-8 thumbnail-shadow"
+        className="w-full lg:w-[90%] object-cover aspect-video border dark-border scale-110 md:scale-100 rounded-2xl h-full lg:h-full md:-mb-20 mt-8 thumbnail-shadow"
         src={url}
         alt={alt}
         priority

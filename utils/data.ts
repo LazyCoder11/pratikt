@@ -1,5 +1,12 @@
 export const projects = [
   {
+    title: "Pixel Frame Co.",
+    desc: "Digital Content Creator",
+    url: "https://www.pixelframe.co/",
+    imageUrl: "/images/pixelframe.png",
+    bgClass: "hover:bg-gradient-to-b hover:from-gray-700 hover:to-transparent",
+  },
+  {
     title: "Grow Your Corp",
     desc: "Digital Marketing Agency",
     subDesc: "-- built with NextJS, Tailwind, Typescript, Framer Motion",
