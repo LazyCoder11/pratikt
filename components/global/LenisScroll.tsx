@@ -20,7 +20,7 @@ export class SmoothScroll {
     // Only initialize if we're in the browser
     if (typeof window !== 'undefined') {
       this.lenis = new Lenis({
-        duration: 1,
+        duration: 2,
         easing: (x: number) => 1 - Math.pow(1 - x, 5),
         orientation: "vertical",
         gestureOrientation: "vertical",
