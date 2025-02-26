@@ -11,7 +11,7 @@ export const projects = [
     title: "4Shan Digital",
     desc: "Management Firm",
     url: "https://4shan.in/",
-    imageUrl: "/images/4shan.svg",
+    imageUrl: "/images/4shan.png",
     bgClass: "hover:bg-gradient-to-b hover:from-[#ffda8975] hover:to-transparent",
   },
   {

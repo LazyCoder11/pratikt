@@ -6,15 +6,6 @@ import React, { useEffect } from 'react'
 import Intro from './_components/Intro';
 
 const Info = () => {
-  useEffect(() => {
-    const lenis = new Lenis();
-
-    function raf(time: any) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-  }, []);
   return (
     <div className='hero background color min-h-screen'>
       <Hero/>

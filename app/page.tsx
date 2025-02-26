@@ -10,22 +10,6 @@ import LoadingScreen from "@/components/LoadingScreen";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const lenis = new Lenis();
-
-    function raf(time: any) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-
-    // Set loading to false after a delay
-    const timeout = setTimeout(() => setIsLoading(false), 5000);
-
-    return () => clearTimeout(timeout);
-  }, []);
-
   return (
     <>
       {/* {isLoading && <LoadingScreen />} */}

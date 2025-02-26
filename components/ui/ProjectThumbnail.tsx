@@ -38,12 +38,13 @@ const ProjectThumbnail: FC<ThumbnailDetails> = ({ url, alt }) => {
   return (
     <div className="flex h-full w-full justify-center md:mt-10 thumbnail">
       <Image
-        width={1000}
-        height={1000}
+        width={2000}
+        height={2000}
         ref={imageRef}
         className="w-full lg:w-[90%] border dark-border scale-110 md:scale-100 rounded-2xl h-full lg:h-1/2 md:-mb-20 mt-8 thumbnail-shadow"
         src={url}
         alt={alt}
+        priority
       />
     </div>
   );

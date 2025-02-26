@@ -18,7 +18,7 @@ const Intro = () => {
 
   return (
     <div className="flex flex-col gap-y-20 items-start pt-[100px] min-h-screen px-5 lg:px-60">
-      <div className="grid grid-cols-2 w-full gap-x-5">
+      <div className="grid gride-cols-1 md:grid-cols-2 w-full gap-x-5">
         <div className="mt-10">
           <div className="overflow-hidden">
             <h3 className="subtitle-text animate-text">

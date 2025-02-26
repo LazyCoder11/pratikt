@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
                     <div className='pb-10'>
                         <h3 className='text-sm md:text-xl tracking-wide'>© 2024 Pratik Trivedi. All Rights Reserved.</h3>
-                        <p className='opacity-50 text-base md:text-lg tracking-wide'>Made with love and maggie ( schezwan double masala ).</p>
+                        <p className='opacity-50 text-base md:text-lg tracking-wide'>Code with perfection...</p>
                     </div>
                 </div>
                 <div className="w-full lg:w-1/2 h-full ">
@@ -52,7 +52,7 @@ const Footer = () => {
                                     <a href="https://github.com/LazyCoder11" target='_blank' className='text-md lg:text-lg flex items-center gap-3'>
                                         Github <RxArrowTopRight />
                                     </a>
-                                    <a href="https://www.instagram.com/pratiktriveedi/" target='_blank' className='text-2xl lg:text-lg flex items-center gap-3'>
+                                    <a href="https://www.instagram.com/pratiktriveedi/" target='_blank' className='text-md lg:text-lg flex items-center gap-3'>
                                         Instagram <RxArrowTopRight />
                                     </a>
                                 </div>
