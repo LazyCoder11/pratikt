@@ -117,7 +117,7 @@ const Hero = () => {
             </div>
             <div className="px-5 lg:px-10 relative md:float-right my-10">
               <p ref={detsRef} className="text-2xl md:text-3xl font-semibold tracking-wider">
-                Freelancer. <br /> Based on Internet.
+                Intern at <br /> Improve Bizz.
               </p>
             </div>
           </div>
