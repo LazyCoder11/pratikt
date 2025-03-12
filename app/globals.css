@@ -22,7 +22,7 @@ body {
 }
 
 .subtitle-text {
-  @apply text-2xl tracking-wide text-[#f2f2f299]
+  @apply text-xl lg:text-2xl tracking-wide
 }
 
 .background {

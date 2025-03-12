@@ -29,7 +29,7 @@ const Hero = (props: Props) => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-y-20 items-start pt-[150px] min-h-screen mb-10 px-5 lg:px-60">
+    <div className="flex flex-col gap-y-20 items-start pt-[150px] lg:min-h-screen mb-10 px-5 lg:px-60">
       <div className="flex flex-col gap-y-5 w-full">
         <div className="flex items-center h-full gap-x-4">
           <span className="size-4 rounded-full bg-white white-blur animate-pulse"></span>
@@ -71,7 +71,7 @@ const Hero = (props: Props) => {
         <div className="overflow-hidden">
           <h3
             ref={headingRef3}
-            className="subtitle-text flex flex-1 justify-end mt-10"
+            className="subtitle-text flex flex-1 justify-end mt-10 text-[#f2f2f299]"
           >
             This is my story — alongside with some photography
           </h3>
