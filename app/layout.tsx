@@ -3,6 +3,7 @@ import { Neue } from "@/utils/customFonts";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import LenisScroll from "@/components/global/ScrollWrapper";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "Pratik Trivedi — Web Designer",
@@ -24,7 +25,8 @@ export default function RootLayout({
         ></script>
       </head>
       <body className={`${Neue.variable} font-neueMontreal`}>
-        <LenisScroll/>
+        <Analytics />
+        <LenisScroll />
         <Navbar />
         {children}
       </body>
