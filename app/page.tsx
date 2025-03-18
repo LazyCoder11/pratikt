@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import Lenis from "lenis";
 import { useEffect, useState } from "react";
 import LoadingScreen from "@/components/LoadingScreen";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,6 +22,7 @@ export default function Home() {
       >
         <Hero />
         <Featured />
+        <Contact/>
         <Footer />
       </main>
     </>
