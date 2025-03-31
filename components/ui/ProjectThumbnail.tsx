@@ -3,6 +3,9 @@
 import React, { FC, useEffect, useRef } from "react";
 import gsap from "gsap";
 import Image from "next/image";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger)
 
 interface ThumbnailDetails {
   url: string;
