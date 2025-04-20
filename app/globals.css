@@ -8,8 +8,8 @@
 }
 
 :root {
-  --background: #101010;
-  --on-background: #f2f2f2;
+  --background: #f2f2f2;
+  --on-background: #101010;
   --secondary-font: "Gloock", serif;
 }
 
@@ -17,8 +17,8 @@ body {
   background-color: var(--background);
 }
 
-.heading-text{
-  @apply  text-[#f2f2f2e6] text-3xl tracking-wide
+.heading-text {
+  @apply text-[#f2f2f2e6] text-3xl tracking-wide
 }
 
 .subtitle-text {
