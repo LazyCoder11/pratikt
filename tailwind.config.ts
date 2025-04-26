@@ -13,6 +13,10 @@ const config: Config = {
     fontFamily: {
       neueMontreal: ["var(--font-neue-montreal)"],
     },
+    colors: {
+      background: "var(--background)",
+      foreground: "var(--on-background)",
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -24,7 +28,6 @@ const config: Config = {
   plugins: [addVariablesForColors],
 };
 export default config;
-
 
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));

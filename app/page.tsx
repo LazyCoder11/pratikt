@@ -22,7 +22,7 @@ export default function Home() {
       >
         <Hero />
         <Featured />
-        <Contact/>
+        <Contact />
         <Footer />
       </main>
     </>

@@ -1,17 +1,18 @@
-"use client"
+"use client";
 
-import Hero from './_components/Hero'
-import Lenis from 'lenis';
-import React, { useEffect } from 'react'
-import Intro from './_components/Intro';
+import Hero from "./_components/Hero";
+import React from "react";
+import Intro from "./_components/Intro";
+import Services from "./_components/Services";
 
 const Info = () => {
   return (
-    <div className='hero background color min-h-screen'>
-      <Hero/>
-      <Intro/>
+    <div className="hero background color min-h-screen">
+      <Hero />
+      <Intro />
+      <Services />
     </div>
-  )
-}
+  );
+};
 
-export default Info
+export default Info;

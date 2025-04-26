@@ -17,7 +17,7 @@ const Intro = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-y-20 items-start lg:pt-[100px] lg:min-h-screen px-5 lg:px-60">
+    <div className="flex flex-col gap-y-20 items-start lg:pt-[100px] px-5 lg:px-60">
       <div className="grid gride-cols-1 md:grid-cols-2  w-full gap-x-5">
         <div className="mt-10 ">
           <div className="overflow-hidden">
