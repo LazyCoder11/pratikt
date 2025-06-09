@@ -7,6 +7,13 @@ export const projects = [
     bgClass: "hover:bg-gradient-to-b hover:from-gray-700 hover:to-transparent",
   },
   {
+    title: "Taivas Debate Club",
+    desc: "An Educational Learning Website",
+    url: "https://www.taivas.co.in/",
+    imageUrl: "/images/taivas.jpeg",
+    bgClass: "hover:bg-gradient-to-b hover:from-gray-700 hover:to-transparent",
+  },
+  {
     title: "Grow Your Corp",
     desc: "Digital Marketing Agency",
     subDesc: "-- built with NextJS, Tailwind, Typescript, Framer Motion",
@@ -19,7 +26,8 @@ export const projects = [
     desc: "Management Firm",
     url: "https://4shan.in/",
     imageUrl: "/images/4shan.png",
-    bgClass: "hover:bg-gradient-to-b hover:from-[#ffda8975] hover:to-transparent",
+    bgClass:
+      "hover:bg-gradient-to-b hover:from-[#ffda8975] hover:to-transparent",
   },
   {
     title: "ReproveSPL — Web3",
