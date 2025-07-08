@@ -11,6 +11,30 @@ const Contact: React.FC = () => {
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
+  // const sendEmail = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setLoading(true);
+  //   setSuccessMessage(null);
+  //   setErrorMessage(null);
+
+  //   if (!formRef.current) return;
+
+  //   try {
+  //     await emailjs.sendForm(
+  //       "service_en4k8uf", // Replace with your EmailJS service ID
+  //       "template_63sct5f", // Replace with your EmailJS template ID
+  //       formRef.current,
+  //       "ekN9JsLW-2AGcAsDv" // Replace with your EmailJS public key
+  //     );
+  //     setSuccessMessage("Message sent successfully!");
+  //     formRef.current.reset();
+  //   } catch {
+  //     setErrorMessage("Failed to send the message. Please try again.");
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
+
   const sendEmail = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
@@ -19,21 +43,38 @@ const Contact: React.FC = () => {
 
     if (!formRef.current) return;
 
+    const formData = new FormData(formRef.current);
+
+    // Convert FormData to JSON
+    const payload: Record<string, string> = {};
+    formData.forEach((value, key) => {
+      payload[key] = value.toString();
+    });
+
     try {
-      await emailjs.sendForm(
-        "service_en4k8uf", // Replace with your EmailJS service ID
-        "template_63sct5f", // Replace with your EmailJS template ID
-        formRef.current,
-        "ekN9JsLW-2AGcAsDv" // Replace with your EmailJS public key
+      const response = await fetch(
+        process.env.NEXT_PUBLIC_N8N_WEBHOOK_URL || "", // Ensure it's set in .env.local
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
       );
+
+      if (!response.ok) throw new Error("Webhook error");
+
       setSuccessMessage("Message sent successfully!");
       formRef.current.reset();
-    } catch {
+    } catch (err) {
+      console.error("Webhook error:", err);
       setErrorMessage("Failed to send the message. Please try again.");
     } finally {
       setLoading(false);
     }
   };
+
 
   return (
     <div
