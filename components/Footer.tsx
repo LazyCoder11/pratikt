@@ -46,9 +46,9 @@ const Footer = () => {
                                     <h4 className='text-base lg:text-sm tracking-wider text-[#636363] font-semibold'>HIRE</h4>
                                 </div>
                                 <div className="flex flex-col gap-5">
-                                    <a href="https://www.linkedin.com/in/pratik-trivedi-dev/" target='_blank' className='text-md lg:text-lg flex items-center gap-3'>
+                                    {/* <a href="https://www.linkedin.com/in/pratik-trivedi-dev/" target='_blank' className='text-md lg:text-lg flex items-center gap-3'>
                                         LinkedIn <RxArrowTopRight />
-                                    </a>
+                                    </a> */}
                                     <a href="https://github.com/LazyCoder11" target='_blank' className='text-md lg:text-lg flex items-center gap-3'>
                                         Github <RxArrowTopRight />
                                     </a>

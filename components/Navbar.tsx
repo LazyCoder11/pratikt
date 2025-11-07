@@ -8,11 +8,11 @@ import { CgArrowTopRight } from "react-icons/cg";
 import gsap from "gsap";
 
 const Navbar = () => {
-    const navbarRef = useRef<HTMLDivElement>(null);
-    const logoRef = useRef<HTMLDivElement>(null);
-    const linksRef = useRef<HTMLDivElement>(null);
-    const contactRef = useRef<HTMLDivElement>(null);
-    const indicatorRef = useRef<HTMLDivElement>(null);
+  const navbarRef = useRef<HTMLDivElement>(null);
+  const logoRef = useRef<HTMLDivElement>(null);
+  const linksRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
+  const indicatorRef = useRef<HTMLDivElement>(null);
 
   const router = useRouter();
   const [activeTab, setActiveTab] = useState("");
@@ -108,30 +108,28 @@ const Navbar = () => {
           <Link
             href="/"
             onClick={() => setActiveTab("work")}
-            className={`px-6 py-1 rounded-full ${
-              activeTab === "work" ? "text-white" : "text-white/70"
-            }`}
+            className={`px-6 py-1 rounded-full ${activeTab === "work" ? "text-white" : "text-white/70"
+              }`}
           >
             Work
           </Link>
           <Link
             href="/info"
             onClick={() => setActiveTab("info")}
-            className={`px-6 py-1 rounded-full ${
-              activeTab === "info" ? "text-white" : "text-white/70"
-            }`}
+            className={`px-6 py-1 rounded-full ${activeTab === "info" ? "text-white" : "text-white/70"
+              }`}
           >
             Info
           </Link>
         </div>
         <div ref={contactRef} className="md:flex hidden items-center">
-          <a
+          {/* <a
             href="https://www.linkedin.com/in/pratik-trivedi-dev/"
             target="_blank"
             className="hover:bg-[#f2f2f20d] px-5 py-2 rounded-full text-lg flex items-center gap-2 transition-all"
           >
             LinkedIn <CgArrowTopRight size={20} />
-          </a>
+          </a> */}
           <a
             href="https://www.instagram.com/pratiktriveedi/"
             target="_blank"

@@ -1,5 +1,13 @@
 export const projects = [
   {
+    title: "Grow Your Corp",
+    desc: "Digital Marketing Agency",
+    subDesc: "-- built with NextJS, Tailwind, Typescript, Framer Motion",
+    url: "https://growyourcorp.com/",
+    imageUrl: "/images/growyourcorp.png",
+    bgClass: "hover:bg-gradient-to-b hover:from-[#7814f7] hover:to-transparent",
+  },
+  {
     title: "Pixel Frame Co.",
     desc: "Digital Content Creator",
     url: "https://www.pixelframe.co/",
@@ -14,12 +22,12 @@ export const projects = [
     bgClass: "hover:bg-gradient-to-b hover:from-gray-700 hover:to-transparent",
   },
   {
-    title: "Grow Your Corp",
-    desc: "Digital Marketing Agency",
-    subDesc: "-- built with NextJS, Tailwind, Typescript, Framer Motion",
-    url: "https://growyourcorp.com/",
-    imageUrl: "/images/growyourcorp.png",
-    bgClass: "hover:bg-gradient-to-b hover:from-[#7814f7] hover:to-transparent",
+    title: "Devial Tech",
+    desc: "Landing Page for AI-IDE Software",
+    subDesc: "-- built with NextJS, Tailwind, GSAP, Typescript",
+    url: "https://www.devial.tech/",
+    imageUrl: "/images/devial.png",
+    bgClass: "hover:bg-gradient-to-b hover:from-gray-700 hover:to-transparent",
   },
   {
     title: "4Shan Digital",
@@ -43,14 +51,7 @@ export const projects = [
     imageUrl: "/images/pkwmedia.svg",
     bgClass: "hover:bg-gradient-to-b hover:from-blue-800 hover:to-transparent",
   },
-  // {
-  //   title: "Dot",
-  //   desc: "Messenger Web App",
-  //   subDesc: "-- built with NextJS, Tailwind, Redis, Upstash",
-  //   url: "https://dot-chi.vercel.app/",
-  //   imageUrl: "/images/dot.svg",
-  //   bgClass: "hover:bg-gradient-to-b hover:from-gray-700 hover:to-transparent",
-  // },
+
   // {
   //   title: "Buzzlrr",
   //   desc: "Digital Content Creator",

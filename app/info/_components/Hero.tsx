@@ -29,10 +29,10 @@ const Hero = (props: Props) => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-y-20 items-start pt-[150px] lg:min-h-screen mb-10 px-5 lg:px-60">
+    <div className="flex flex-col gap-y-20 items-start w-full pt-[150px] lg:min-h-screen mb-10 px-5 lg:px-60">
       <div className="flex flex-col gap-y-5 w-full">
         <div className="flex items-center h-full gap-x-4">
-          <span className="size-4 rounded-full bg-white white-blur animate-pulse"></span>
+          <span className="size-2 rounded-full bg-[#ffffff] animate-pulse white-blur "></span>
           <h2 className="uppercase text-base">About Me</h2>
         </div>
         <div className="">
@@ -54,18 +54,18 @@ const Hero = (props: Props) => {
           </div>
         </div>
       </div>
-      <div className="">
+      <div className="w-full">
         <div
           ref={cardRef1}
-          className="relative w-full overflow-hidden rounded-3xl border dark-border p-2 md:p-3 h-full box-border featured-shadow"
+          className="relative overflow-hidden rounded-3xl border dark-border p-2 md:p-3 w-full h-full box-border featured-shadow"
         >
           <HorizontalBorder />
           <Image
-            src={"/images/info/1.jpg"}
+            src={"/images/info/pratik.jpg"}
             alt="Info 1"
             width={6000}
             height={6000}
-            className="size-full object-cover rounded-2xl"
+            className="size-full aspect-video object-cover rounded-2xl"
           />
         </div>
         <div className="overflow-hidden">

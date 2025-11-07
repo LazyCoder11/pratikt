@@ -20,7 +20,7 @@ const Services = () => {
     }
   }, []);
   return (
-    <section className="px-5 lg:px-60 min-h-screen lg:pt-[100px]">
+    <section className="px-5 lg:px-60 min-h-screen">
       <div className="">
         <div className="overflow-hidden">
           <h1
