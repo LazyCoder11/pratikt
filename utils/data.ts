@@ -29,14 +29,14 @@ export const projects = [
     imageUrl: "/images/devial.png",
     bgClass: "hover:bg-gradient-to-b hover:from-gray-700 hover:to-transparent",
   },
-  {
-    title: "4Shan Digital",
-    desc: "Management Firm",
-    url: "https://4shan.in/",
-    imageUrl: "/images/4shan.png",
-    bgClass:
-      "hover:bg-gradient-to-b hover:from-[#ffda8975] hover:to-transparent",
-  },
+  // {
+  //   title: "4Shan Digital",
+  //   desc: "Management Firm",
+  //   url: "https://4shan.in/",
+  //   imageUrl: "/images/4shan.png",
+  //   bgClass:
+  //     "hover:bg-gradient-to-b hover:from-[#ffda8975] hover:to-transparent",
+  // },
   {
     title: "ReproveSPL — Web3",
     desc: "Autonomous AI Agent for Solana",
