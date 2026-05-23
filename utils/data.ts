@@ -1,5 +1,20 @@
 export const projects = [
   {
+    title: "Groomera",
+    desc: "SaaS Booking platform for Salons, Barbershops & Spas",
+    subDesc: "-- built with NextJS, Tailwind, Typescript",
+    url: "https://groomera.com/",
+    imageUrl: "/images/groomera.png",
+    bgClass: "hover:bg-gradient-to-b hover:from-[#7814f7] hover:to-transparent",
+  },
+  {
+    title: "Pixel Frame Co.",
+    desc: "Motion Studio for Web3 and SaaS Companies",
+    url: "https://www.pixelframe.co/",
+    imageUrl: "/images/pixelframe.png",
+    bgClass: "hover:bg-gradient-to-b hover:from-gray-700 hover:to-transparent",
+  },
+  {
     title: "Grow Your Corp",
     desc: "Digital Marketing Agency",
     subDesc: "-- built with NextJS, Tailwind, Typescript, Framer Motion",
@@ -8,27 +23,20 @@ export const projects = [
     bgClass: "hover:bg-gradient-to-b hover:from-[#7814f7] hover:to-transparent",
   },
   {
-    title: "Pixel Frame Co.",
-    desc: "Digital Content Creator",
-    url: "https://www.pixelframe.co/",
-    imageUrl: "/images/pixelframe.png",
-    bgClass: "hover:bg-gradient-to-b hover:from-gray-700 hover:to-transparent",
-  },
-  {
     title: "Taivas Debate Club",
     desc: "An Educational Learning Website",
     url: "https://www.taivas.co.in/",
     imageUrl: "/images/taivas.jpeg",
     bgClass: "hover:bg-gradient-to-b hover:from-gray-700 hover:to-transparent",
   },
-  {
-    title: "Devial Tech",
-    desc: "Landing Page for AI-IDE Software",
-    subDesc: "-- built with NextJS, Tailwind, GSAP, Typescript",
-    url: "https://www.devial.tech/",
-    imageUrl: "/images/devial.png",
-    bgClass: "hover:bg-gradient-to-b hover:from-gray-700 hover:to-transparent",
-  },
+  // {
+  //   title: "Devial Tech",
+  //   desc: "Landing Page for AI-IDE Software",
+  //   subDesc: "-- built with NextJS, Tailwind, GSAP, Typescript",
+  //   url: "https://www.devial.tech/",
+  //   imageUrl: "/images/devial.png",
+  //   bgClass: "hover:bg-gradient-to-b hover:from-gray-700 hover:to-transparent",
+  // },
   // {
   //   title: "4Shan Digital",
   //   desc: "Management Firm",
@@ -37,20 +45,20 @@ export const projects = [
   //   bgClass:
   //     "hover:bg-gradient-to-b hover:from-[#ffda8975] hover:to-transparent",
   // },
-  {
-    title: "ReproveSPL — Web3",
-    desc: "Autonomous AI Agent for Solana",
-    url: "https://reprove.io/",
-    imageUrl: "/images/reprovespl.png",
-    bgClass: "hover:bg-gradient-to-b hover:from-[#2f8ca3] hover:to-transparent",
-  },
-  {
-    title: "PKW Media Agency",
-    desc: "Video Editor Portfolio",
-    url: "https://pkwmediaagency.netlify.app//",
-    imageUrl: "/images/pkwmedia.svg",
-    bgClass: "hover:bg-gradient-to-b hover:from-blue-800 hover:to-transparent",
-  },
+  // {
+  //   title: "ReproveSPL — Web3",
+  //   desc: "Autonomous AI Agent for Solana",
+  //   url: "https://reprove.io/",
+  //   imageUrl: "/images/reprovespl.png",
+  //   bgClass: "hover:bg-gradient-to-b hover:from-[#2f8ca3] hover:to-transparent",
+  // },
+  // {
+  //   title: "PKW Media Agency",
+  //   desc: "Video Editor Portfolio",
+  //   url: "https://pkwmediaagency.netlify.app//",
+  //   imageUrl: "/images/pkwmedia.svg",
+  //   bgClass: "hover:bg-gradient-to-b hover:from-blue-800 hover:to-transparent",
+  // },
 
   // {
   //   title: "Buzzlrr",

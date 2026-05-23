@@ -61,7 +61,7 @@ const Hero = (props: Props) => {
         >
           <HorizontalBorder />
           <Image
-            src={"/images/info/pratik.jpg"}
+            src={"/images/info/pratik2.jpeg"}
             alt="Info 1"
             width={6000}
             height={6000}

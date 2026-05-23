@@ -92,7 +92,7 @@ const Navbar = () => {
               Pratik Trivedi
             </h4>
             <p className="tracking-wide text-[#f2f2f27e] text-base">
-              Web Designer
+              Software Engineer
             </p>
           </div>
         </div>

@@ -3,10 +3,7 @@
 import Featured from "@/components/Featured";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
-import Lenis from "lenis";
 import { useEffect, useState } from "react";
-import LoadingScreen from "@/components/LoadingScreen";
 import Contact from "@/components/Contact";
 
 export default function Home() {

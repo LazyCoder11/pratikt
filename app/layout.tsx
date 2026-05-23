@@ -8,8 +8,8 @@ import { BackgroundMusic } from "@/components/global/BackgroundMusic";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Pratik Trivedi — Web Designer",
-  description: "A Freelance Web Designer",
+  title: "Pratik Trivedi — Software Engineer",
+  description: "Code till perfection",
 };
 
 export default function RootLayout({
