@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 import HorizontalBorder from "./ui/HorizontalBorder";
 
 const Contact: React.FC = () => {
@@ -10,30 +9,6 @@ const Contact: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
-
-  // const sendEmail = async (e: React.FormEvent) => {
-  //   e.preventDefault();
-  //   setLoading(true);
-  //   setSuccessMessage(null);
-  //   setErrorMessage(null);
-
-  //   if (!formRef.current) return;
-
-  //   try {
-  //     await emailjs.sendForm(
-  //       "service_en4k8uf", // Replace with your EmailJS service ID
-  //       "template_63sct5f", // Replace with your EmailJS template ID
-  //       formRef.current,
-  //       "ekN9JsLW-2AGcAsDv" // Replace with your EmailJS public key
-  //     );
-  //     setSuccessMessage("Message sent successfully!");
-  //     formRef.current.reset();
-  //   } catch {
-  //     setErrorMessage("Failed to send the message. Please try again.");
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
 
   const sendEmail = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -44,32 +19,31 @@ const Contact: React.FC = () => {
     if (!formRef.current) return;
 
     const formData = new FormData(formRef.current);
-
-    // Convert FormData to JSON
-    const payload: Record<string, string> = {};
-    formData.forEach((value, key) => {
-      payload[key] = value.toString();
-    });
+    const payload = {
+      user_name: formData.get("user_name"),
+      user_email: formData.get("user_email"),
+      message: formData.get("message"),
+    };
 
     try {
-      const response = await fetch(
-        process.env.NEXT_PUBLIC_N8N_WEBHOOK_URL || "", // Ensure it's set in .env.local
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(payload),
-        }
-      );
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
 
-      if (!response.ok) throw new Error("Webhook error");
+      const result = await response.json();
+
+      if (!response.ok || result.error) {
+        throw new Error(result.error || "Failed to send email");
+      }
 
       setSuccessMessage("Message sent successfully!");
       formRef.current.reset();
-    } catch (err) {
-      console.error("Webhook error:", err);
-      setErrorMessage("Failed to send the message. Please try again.");
+    } catch (err: any) {
+      setErrorMessage(err.message || "Failed to send the message. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -91,6 +65,7 @@ const Contact: React.FC = () => {
         <form
           ref={formRef}
           onSubmit={sendEmail}
+          action="javascript:void(0)"
           className="flex flex-col md:items-end gap-4 relative featured-bg dark-border box-border border p-3 rounded-2xl"
         >
           <div className="w-full flex flex-col md:flex-row items-center gap-4">
