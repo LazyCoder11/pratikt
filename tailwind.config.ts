@@ -13,11 +13,11 @@ const config: Config = {
     fontFamily: {
       neueMontreal: ["var(--font-neue-montreal)"],
     },
-    colors: {
-      background: "var(--background)",
-      foreground: "var(--on-background)",
-    },
     extend: {
+      colors: {
+        background: "var(--background)",
+        foreground: "var(--on-background)",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

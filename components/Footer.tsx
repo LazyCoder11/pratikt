@@ -33,11 +33,14 @@ const Footer = () => {
                                     <h4 className='text-base lg:text-sm tracking-wider text-[#636363] font-semibold'>MAIN</h4>
                                 </div>
                                 <div className="flex flex-col gap-5">
-                                    <Link href="/" className='text-md lg:text-lg'>
+                                    <Link href="/" className='text-md lg:text-lg hover:text-white transition-colors'>
                                         Work
                                     </Link>
-                                    <Link href="/info" className='text-md lg:text-lg'>
+                                    <Link href="/info" className='text-md lg:text-lg hover:text-white transition-colors'>
                                         Info
+                                    </Link>
+                                    <Link href="/ai-receptionist" className='text-md lg:text-lg hover:text-white transition-colors'>
+                                        AI Receptionist
                                     </Link>
                                 </div>
                             </div>
