@@ -17,7 +17,7 @@ const Footer = () => {
                         />
                         <div className="md:flex lg:hidden flex flex-col">
                             <h4 className='color text-2xl tracking-wider font-normal'>Pratik Trivedi</h4>
-                            <p className='tracking-wide text-[#f2f2f27e] text-xl'>Web Designer</p>
+                            <p className='tracking-wide text-[#f2f2f27e] text-xl'>Software Engineer</p>
                         </div>
                     </div>
                     <div className='pb-10'>
