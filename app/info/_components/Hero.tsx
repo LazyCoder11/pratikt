@@ -1,26 +1,23 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-import HorizontalBorder from "@/components/ui/HorizontalBorder";
-import Image from "next/image";
 import { fadeIn, slideTop } from "@/lib/animations";
+import Experience from "./Experience";
 
 type Props = {};
 
 const Hero = (props: Props) => {
   const headingRef1 = useRef<HTMLDivElement>(null);
   const headingRef2 = useRef<HTMLDivElement>(null);
-  const headingRef3 = useRef<HTMLDivElement>(null);
   const cardRef1 = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const words = headingRef1.current;
     const words2 = headingRef2.current;
-    const words3 = headingRef3.current;
     const card = cardRef1.current;
 
     // Animate headings
-    slideTop([words, words2, words3]);
+    slideTop([words, words2]);
 
     // Animate the card
     if (card) {
@@ -41,7 +38,7 @@ const Hero = (props: Props) => {
               ref={headingRef1}
               className="text-[11vw] text-shadow-white lg:text-[4vw] font-thin tracking-wide leading-tight text-white"
             >
-              I build web experiences that
+              I&apos;ve been writing production-
             </h1>
           </div>
           <div className="overflow-hidden">
@@ -49,33 +46,13 @@ const Hero = (props: Props) => {
               ref={headingRef2}
               className="text-[11vw] text-shadow-white lg:text-[4vw] font-thin tracking-wide leading-tight text-white"
             >
-              actually make you say <i>Hell Yeah!</i>
+              code for <i>3+ years</i> now
             </h1>
           </div>
         </div>
       </div>
-      <div className="w-full">
-        <div
-          ref={cardRef1}
-          className="relative overflow-hidden rounded-3xl border dark-border p-2 md:p-3 w-full h-full box-border featured-shadow"
-        >
-          <HorizontalBorder />
-          <Image
-            src={"/images/info/pratik2.jpeg"}
-            alt="Info 1"
-            width={6000}
-            height={6000}
-            className="size-full aspect-video object-cover rounded-2xl"
-          />
-        </div>
-        <div className="overflow-hidden">
-          <h3
-            ref={headingRef3}
-            className="subtitle-text flex flex-1 justify-end mt-10 text-[#f2f2f299]"
-          >
-            This is my story — alongside with some photography
-          </h3>
-        </div>
+      <div ref={cardRef1} className="w-full">
+        <Experience />
       </div>
     </div>
   );

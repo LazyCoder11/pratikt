@@ -1,16 +1,8 @@
 export const projects = [
   {
-    title: "Joshi Homes",
-    desc: "Real Estate Developers in New Jersey",
-    subDesc: "",
-    url: "https://joshihomenj.com/",
-    imageUrl: "/images/joshihomesnj.png",
-    bgClass: "hover:bg-gradient-to-b hover:from-[#7814f7] hover:to-transparent",
-  },
-  {
     title: "Groomera",
     desc: "SaaS Booking platform for Salons, Barbershops & Spas",
-    subDesc: "-- built with NextJS, Tailwind, Typescript",
+    // subDesc: "-- built with NextJS, Tailwind, Typescript",
     url: "https://groomera.com/",
     imageUrl: "/images/groomera.png",
     bgClass: "hover:bg-gradient-to-b hover:from-[#7814f7] hover:to-transparent",
@@ -23,9 +15,17 @@ export const projects = [
     bgClass: "hover:bg-gradient-to-b hover:from-gray-700 hover:to-transparent",
   },
   {
+    title: "Joshi Homes",
+    desc: "Real Estate Developers in New Jersey",
+    subDesc: "",
+    url: "https://joshihomenj.com/",
+    imageUrl: "/images/joshihomesnj.png",
+    bgClass: "hover:bg-gradient-to-b hover:from-[#7814f7] hover:to-transparent",
+  },
+  {
     title: "Grow Your Corp",
     desc: "Digital Marketing Agency",
-    subDesc: "-- built with NextJS, Tailwind, Typescript, Framer Motion",
+    // subDesc: "-- built with NextJS, Tailwind, Typescript, Framer Motion",
     url: "https://growyourcorp.com/",
     imageUrl: "/images/growyourcorp.png",
     bgClass: "hover:bg-gradient-to-b hover:from-[#7814f7] hover:to-transparent",

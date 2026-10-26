@@ -95,7 +95,7 @@ const Hero = () => {
                   ref={headingRef1}
                   className="text-[11vw] text-shadow-white lg:text-[4.5vw] font-semibold tracking-wide leading-tight text-white"
                 >
-                  {splitTextToSpans("I bring digital visions to")}
+                  {splitTextToSpans("I'm Pratik. I build ")}
                 </h1>
               </div>
               <div className="px-5 lg:px-10 overflow-hidden">
@@ -103,7 +103,7 @@ const Hero = () => {
                   ref={headingRef2}
                   className="text-[11vw] text-shadow-white lg:text-[4.5vw] font-semibold tracking-wide leading-tight text-white"
                 >
-                  {splitTextToSpans("life through design &")}
+                  {splitTextToSpans("products and obsess")}
                 </h1>
               </div>
               <div className="px-5 lg:px-10 overflow-hidden">
@@ -111,13 +111,13 @@ const Hero = () => {
                   ref={headingRef3}
                   className="text-[11vw] text-shadow-white lg:text-[4.5vw] font-semibold tracking-wide leading-tight text-white"
                 >
-                  {splitTextToSpans("code.")}
+                  {splitTextToSpans("over design.")}
                 </h1>
               </div>
             </div>
             <div className="px-5 lg:px-10 relative md:float-right my-10">
               <p ref={detsRef} className="text-2xl md:text-3xl font-semibold tracking-wider">
-                Software Engineer at <br /> Growyourcorp.
+                Product Engineer at <br /> Growyourcorp.
               </p>
             </div>
           </div>

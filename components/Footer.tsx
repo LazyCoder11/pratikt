@@ -39,9 +39,9 @@ const Footer = () => {
                                     <Link href="/info" className='text-md lg:text-lg hover:text-white transition-colors'>
                                         Info
                                     </Link>
-                                    <Link href="/ai-receptionist" className='text-md lg:text-lg hover:text-white transition-colors'>
+                                    {/* <Link href="/ai-receptionist" className='text-md lg:text-lg hover:text-white transition-colors'>
                                         AI Receptionist
-                                    </Link>
+                                    </Link> */}
                                 </div>
                             </div>
                             <div className="w-full lg:w-1/2">

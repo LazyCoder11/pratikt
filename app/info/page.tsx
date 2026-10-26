@@ -10,8 +10,8 @@ const Info = () => {
   return (
     <div className="hero background color min-h-screen">
       <Hero />
-      <Intro />
-      <Services />
+      {/* <Intro /> */}
+      {/* <Services /> */}
       <Footer />
     </div>
   );

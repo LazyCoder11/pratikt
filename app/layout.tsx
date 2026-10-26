@@ -8,7 +8,7 @@ import { BackgroundMusic } from "@/components/global/BackgroundMusic";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Pratik Trivedi — Software Engineer",
+  title: "Pratik Trivedi — Product Engineer",
   description: "Code till perfection",
 };
 
